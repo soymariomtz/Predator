@@ -1,0 +1,151 @@
+:root {
+	--breakpoint-xs: 0;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {scroll-behavior: smooth;
+}
+
+body {
+	font-family: Montserrat;
+    line-height: 1.4;
+    background-color:  #f3f3f3;
+}
+
+/* MENU */
+.nave a {
+    color: white;
+    font-weight: bold;
+}
+.navbar {
+	padding: 0;
+}
+
+.nave {
+	font-size: 18px;
+	height: 86vh;
+}
+
+h2 {
+	display: flex;
+	justify-content: center;
+	text-decoration: underline;
+	margin-bottom: 2rem;
+	font-weight: bold;
+}
+
+#logo {
+	margin-top: 100px;
+}
+
+/* MODELOS */
+.modelo {
+	display: flex;
+	justify-content: center;
+}
+
+.imgModel {
+	display: flex;
+	justify-content: center;
+}
+
+/* DESCRIPCION */
+p {
+	font-family: Raleway;
+}
+
+// .carousel {
+//   height: 550px;
+//   width: 550px;
+// }
+
+.carousel-inner {
+    height: 773px;
+}
+
+.grido {
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 3rem;
+}
+
+#descripcion {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 500px 120px;
+    grid-auto-rows: 200px;
+    grid-template-areas: 
+        "titulo titulo"
+        "formulario mapa";
+
+    .item.d {
+    grid-area: titulo;}
+
+    .item.e {
+    grid-area: formulario;}
+
+    .item.f {
+    grid-area: mapa;}
+    }
+
+/* DETALLE */
+.detalles {
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+}
+
+.vidio {
+	width: 776px;
+}
+
+.wido {
+    width: 5%;
+    opacity: 1;
+}
+
+/* CONTACTO - NEWSLETTER - FOOTER */
+.grid {
+	display: grid;
+	grid-gap: 10px;
+    margin-top: 150px;
+}
+
+#areaContacto { 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 500px 120px;
+    grid-auto-rows: 200px;
+    grid-template-areas: 
+        "titulo titulo"
+        "formulario mapa"
+        "newsletter newsletter"
+        "footer footer";
+
+    .item.a {
+    text-align: center; 
+    grid-area: titulo; }
+
+    .item.b {
+    grid-area: formulario;
+    padding: 39px; }
+
+    .item.c {
+    grid-area: mapa; 
+    padding: 0; 
+    text-align: center; }
+
+    .item.d {
+    grid-area: newsletter; 
+    text-align: center;
+    margin-top: 100px; }
+
+    .item.e {
+    grid-area: footer; 
+    text-align: center;
+    margin-top: 100px; } 
+}
