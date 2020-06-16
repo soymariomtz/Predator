@@ -43,10 +43,6 @@ h2 {
   display: flex;
   justify-content: center; }
 
-.imgModel {
-  display: flex;
-  justify-content: center; }
-
 /* DESCRIPCION */
 p {
   font-family: Raleway; }
@@ -80,6 +76,10 @@ p {
   width: 776px; }
 
 .wido {
+  width: 2%;
+  opacity: 1; }
+
+.widow {
   width: 5%;
   opacity: 1; }
 
