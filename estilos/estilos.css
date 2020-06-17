@@ -55,15 +55,18 @@ p {
   height: 773px; }
 
 .grido {
+  display: grid;
+  grid-gap: 10px;
   margin-top: 3rem; }
 
 #descripcion {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 500px 120px;
   grid-auto-rows: 200px;
-  grid-template-areas: "titulo titulo" "formulario mapa"; }
+  grid-template-areas: "titulo titulo" "formulario mapa"; }
   #descripcion .item.d {
-    grid-area: titulo; }
+    grid-area: titulo;
+    margin-top: 100px; }
   #descripcion .item.e {
     grid-area: formulario; }
   #descripcion .item.f {
@@ -95,7 +98,7 @@ p {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 500px 120px;
   grid-auto-rows: 200px;
-  grid-template-areas: "titulo titulo" "formulario mapa" "newsletter newsletter" "footer footer"; }
+  grid-template-areas: "titulo titulo" "formulario mapa" "newsletter newsletter" "footer footer"; }
   #areaContacto .item.a {
     text-align: center;
     grid-area: titulo; }
