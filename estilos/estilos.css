@@ -26,7 +26,7 @@ body {
 
 .nave {
   font-size: 18px;
-  height: 86vh; }
+  margin-bottom: 50px; }
 
 h2 {
   display: flex;
@@ -38,10 +38,81 @@ h2 {
 #logo {
   margin-top: 100px; }
 
+.logoRs {
+  margin-left: 212px; }
+
 /* MODELOS */
-.modelo {
-  display: flex;
-  justify-content: center; }
+.grids {
+  display: grid;
+  grid-gap: 10px;
+  margin-top: 150px; }
+
+#modelos {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 500px 120px;
+  grid-auto-rows: 200px;
+  grid-template-areas: "titulo titulo" "modeloNegro modeloRojo"; }
+
+.item.i {
+  margin-left: 102px;
+  grid-area: titulo; }
+
+.item.j {
+  grid-area: modeloNegro;
+  margin-left: 80px; }
+
+.item.k {
+  grid-area: modeloRojo;
+  margin-left: 80px; }
+
+@media (max-width: 976px) {
+  #modelos {
+    margin-top: 120px; }
+  .container {
+    margin-left: 0; }
+  .logoRs {
+    margin-left: 137px; }
+  .item.i {
+    margin-left: -66px; }
+  .item.j {
+    margin-left: 0; }
+  .item.f {
+    margin-left: 100px; }
+  .item.f > h2 {
+    margin-left: 72px; }
+  #descripcion {
+    margin-left: 60px; }
+  .carru {
+    margin-left: 52px; }
+  #detalles {
+    margin-left: 80px; }
+  .deTitulo {
+    margin-left: 70px; }
+  .futon {
+    margin-left: 80px; } }
+
+@media (max-width: 576px) {
+  #modelos {
+    margin-top: 120px; }
+  .container {
+    margin-left: 0; }
+  .logoRs {
+    margin-left: 62px; }
+  .item.i {
+    margin-left: 0;
+    margin-left: -46px; }
+  .item.j {
+    margin-left: 0; }
+  .item.f {
+    margin-left: 100px; }
+  #descripcion {
+    margin-left: 45px; }
+  .carru {
+    margin-left: 52px; }
+  #detalles {
+    margin-left: 80px; }
+  .futon {
+    margin-left: 80px; } }
 
 .imgModel {
   display: flex;
@@ -70,12 +141,12 @@ p {
   grid-template-rows: auto 500px 120px;
   grid-auto-rows: 200px;
   grid-template-areas: "titulo titulo" "formulario mapa"; }
-  #descripcion .item.d {
+  #descripcion .item.f {
     grid-area: titulo;
     margin-top: 100px; }
-  #descripcion .item.e {
+  #descripcion .item.g {
     grid-area: formulario; }
-  #descripcion .item.f {
+  #descripcion .item.h {
     grid-area: mapa; }
 
 /* DETALLE */
@@ -100,26 +171,26 @@ p {
   grid-gap: 10px;
   margin-top: 150px; }
 
-#areaContacto {
+#contacto {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 500px 120px;
   grid-auto-rows: 200px;
   grid-template-areas: "titulo titulo" "formulario mapa" "newsletter newsletter" "footer footer"; }
-  #areaContacto .item.a {
+  #contacto .item.a {
     text-align: center;
     grid-area: titulo; }
-  #areaContacto .item.b {
+  #contacto .item.b {
     grid-area: formulario;
     padding: 39px; }
-  #areaContacto .item.c {
+  #contacto .item.c {
     grid-area: mapa;
     padding: 0;
     text-align: center; }
-  #areaContacto .item.d {
+  #contacto .item.d {
     grid-area: newsletter;
     text-align: center;
     margin-top: 100px; }
-  #areaContacto .item.e {
+  #contacto .item.e {
     grid-area: footer;
     text-align: center;
     margin-top: 100px; }
