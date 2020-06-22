@@ -71,15 +71,15 @@ h2 {
   .container {
     margin-left: 0; }
   .logoRs {
-    margin-left: 137px; }
+    margin-left: 117px; }
   .item.i {
-    margin-left: -66px; }
+    margin-left: 29px; }
   .item.j {
     margin-left: 0; }
   .item.f {
     margin-left: 100px; }
   .item.f > h2 {
-    margin-left: 72px; }
+    margin-left: 0px; }
   #descripcion {
     margin-left: 60px; }
   .carru {
@@ -91,16 +91,42 @@ h2 {
   .futon {
     margin-left: 80px; } }
 
+@media (max-width: 776px) {
+  #modelos {
+    margin-top: 120px; }
+  .container {
+    margin-left: 0; }
+  .logoRs {
+    margin-left: 160px; }
+  .item.i {
+    margin-left: -35px; }
+  .item.j {
+    margin-left: 0; }
+  .item.f {
+    margin-left: 100px; }
+  .item.f > h2 {
+    margin-left: 111px; }
+  #descripcion {
+    margin-left: 60px; }
+  .carru {
+    margin-left: 52px; }
+  #detalles {
+    margin-left: 123px; }
+  .deTitulo {
+    margin-left: 70px; }
+  .futon {
+    margin-left: 80px; } }
+
 @media (max-width: 576px) {
   #modelos {
     margin-top: 120px; }
   .container {
     margin-left: 0; }
   .logoRs {
-    margin-left: 62px; }
+    margin-left: 135px; }
   .item.i {
     margin-left: 0;
-    margin-left: -46px; }
+    margin-left: -86px; }
   .item.j {
     margin-left: 0; }
   .item.f {
