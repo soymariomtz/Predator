@@ -47,6 +47,12 @@ h2 {
   display: flex;
   justify-content: center; }
 
+.buttonaso {
+  color: green; }
+
+.buttonaso:hover {
+  color: white; }
+
 /* DESCRIPCION */
 p {
   font-family: Raleway; }

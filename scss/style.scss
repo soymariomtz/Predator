@@ -56,6 +56,14 @@ h2 {
 	justify-content: center;
 }
 
+.buttonaso {
+     color: green;
+}
+
+.buttonaso:hover {
+            color: white;
+}
+
 /* DESCRIPCION */
 p {
 	font-family: Raleway;
@@ -86,7 +94,7 @@ p {
 
     .item.d {
     grid-area: titulo;
-    margin-top: 100px}
+    margin-top: 100px;}
 
     .item.e {
     grid-area: formulario;}
