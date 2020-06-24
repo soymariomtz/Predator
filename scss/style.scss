@@ -70,7 +70,7 @@ h2 {
 
 .item.j {
     grid-area: modeloNegro;
-    margin-left: 80px;
+    // margin-left: 80px;
 }
 
 .item.k {
@@ -372,7 +372,7 @@ p {
             "modeloRojo modeloRojo"; }
         .item.k {
             margin-top: 50px;
-            margin-left: -18px;}    
+            margin-left: -42px;}    
     #modelos {
             margin-top: 120px;
             margin-bottom: 500px;
@@ -380,21 +380,106 @@ p {
         }
 
     .carousel-inner {
-        height: 450px;
+        height: 370px;
     }
     
      .container {
        margin-left: 0;
     }
     .logoRs {
-        margin-left: 41px;
+        margin-left: 0px;
+        margin-top: 150px;
+    }
+    .logoRsp {
+        margin-left: 75px;
+    }
+    .item.i {
+        margin-left: 0px;
+    }
+    .item.j {
+        margin-left: -51px;
+    }
+    .item.f {
+        margin-left: 100px;
+    }
+    .item.f > h2 {
+        margin-left: 0;
+    }
+    #descripcion {
+     margin-left: 0px;
+   }
+    .carru {
+        margin-left: 52px;
+        margin-top: 20px;
+    }
+    #detalles {
+        margin-left: 63px;
+        margin-top: 80px;
+    }
+    .futon {
+        margin-left: 40px;
+    }
+    .item.c {
+        margin-top: 30px;
+        margin-left: -15px;
+        .ubicacion>h3 {
+            text-transform: uppercase;
+            font-weight: bolder;
+            text-decoration: underline;
+            margin-left: 62px;
+        }
+    }
+    .deTitulo {
+        margin-left: -32px;
+    }
+    #contacto { 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 500px 450px;
+        grid-auto-rows: 200px;
+        grid-template-areas: 
+            "titulo titulo"
+            "formulario formulario"
+            "mapa mapa"
+            "newsletter newsletter"
+            "footer footer";
+}
+@media (max-width: 375px) {
+    #modelos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 500px 120px;
+        grid-auto-rows: 200px;
+        grid-template-areas:
+            "titulo titulo"
+            "modeloNegro modeloNegro"
+            "modeloRojo modeloRojo"; }
+        .item.k {
+            margin-top: 50px;
+            margin-left: -48px;}    
+    #modelos {
+            margin-top: 120px;
+            margin-bottom: 500px;
+            margin-left: 120px;        
+        }
+
+    .carousel-inner {
+        height: 300px;
+    }
+    
+     .container {
+       margin-left: 0;
+    }
+    .logoRs {
+        margin-left: -6px;
+        margin-top: 150px;
+    }
+    .logoRsp {
+        margin-left: 65px;
     }
     .item.i {
         margin-left: 0;
-        margin-left: -86px;
     }
     .item.j {
-        margin-left: -33px;
+        margin-left: -72px;
     }
     .item.f {
         margin-left: 100px;
@@ -418,6 +503,7 @@ p {
     }
     .item.c {
         margin-top: 30px;
+        margin-left: -27px;
         .ubicacion>h3 {
             text-transform: uppercase;
             font-weight: bolder;
@@ -437,67 +523,6 @@ p {
             "mapa mapa"
             "newsletter newsletter"
             "footer footer";
-}
-@media (max-width: 250px) {
-    .carousel-inner {
-        height: 450px;
-    }
-    #modelos {
-        margin-top: 120px;
         }
-    
-    .container {
-        margin-left: 0;
-    }
-    .logoRs {
-        margin-left: 135px;
-    }
-    .item.i {
-        margin-left: 0;
-        margin-left: -86px;
-    }
-    .item.j {
-        margin-left: 0;
-    }
-    .item.f {
-        margin-left: 100px;
-    }
-    #descripcion {
-        margin-left: 86px;
-    }
-    .carru {
-        margin-left: 115px;
-        margin-bottom: 32px;
-    }
-    #detalles {
-        margin-left: 141px;
-    }
-    .futon {
-        margin-left: 131px;
-    }
-    .ifram {
-        margin-left: 61px;
-    }
-    .item.e {
-        margin-left: 63px;
-    }
-    .item.c {
-        margin-top: 30px;
-        .ubicacion>h3 {
-            text-transform: uppercase;
-            font-weight: bolder;
-            text-decoration: underline;
-        }
-    }
-    #contacto { 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 500px 450px;
-        grid-auto-rows: 200px;
-        grid-template-areas: 
-            "titulo titulo"
-            "formulario formulario"
-            "mapa mapa"
-            "newsletter newsletter"
-            "footer footer";}
     }
 }
