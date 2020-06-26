@@ -17,6 +17,8 @@ body {
 	font-family: Montserrat;
     line-height: 1.4;
     background-color:  #f3f3f3;
+    max-width: 1300px;
+    margin: auto;
 }
 
 /* MENU */
@@ -62,15 +64,17 @@ h2 {
         "titulo titulo"
         "modeloNegro modeloRojo";
 }
-
+#modelos {
+    margin-left: 71px;
+}
 .item.i {
-    margin-left: 102px;
+    margin-left: 30px;
     grid-area: titulo;
 }
 
 .item.j {
     grid-area: modeloNegro;
-    // margin-left: 80px;
+    margin-left: 40px;
 }
 
 .item.k {
@@ -97,14 +101,9 @@ p {
 	font-family: Raleway;
 }
 
-// .carousel {
-//   height: 550px;
-//   width: 550px;
+// .carousel-inner {
+//     height: 773px;
 // }
-
-.carousel-inner {
-    height: 773px;
-}
 
 .grido {
     display: grid;
@@ -132,9 +131,8 @@ p {
     }
 
 /* DETALLE */
-.detalles {
+#detalles {
 	margin-top: 3rem;
-	margin-bottom: 5rem;
 }
 
 .vidio {
@@ -196,15 +194,23 @@ p {
     }
 }
 @media (max-width: 1200px){
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
     .logoRs {
         margin: auto;
     }
     
     #modelos {
-        margin-left: -63px;
+        margin-left: -26px;
     }
 }
 @media (max-width: 976px) { 
+    body {
+        max-width: 976px;
+        margin: auto;
+    }
     #modelos {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 500px 120px;
@@ -219,56 +225,24 @@ p {
     #modelos {
             margin-top: 120px;
             margin-bottom: 500px;
-            margin-left: 120px;        
+                    
         }
-    // #modelos {
-    //     margin-top: 120px;
-    //     margin-left: 25px;
-    //     }
-    
-    .container {
-        margin-left: 0;
-    }
-    .logoRs {
-        margin-left: 45px;
-        margin-right: auto;
-    }
-    .item.i {
-        margin-left: -6px;
-    }
-    .item.j {
-        margin-left: 30;
-    }
-    .item.f {
-        margin-left: 100px;
-    }
-    .item.f>h2 {
-        margin-left: 0px;
-    }
-    #descripcion {
-        margin-left: 0;
+    .zapa {
+        margin-left: 105px;
     }
     .carru {
-        margin-left: 52px;
-    }
-    #detalles {
-        margin-left: 45px;
-    }
-    .deTitulo {
-        margin-left: 0px;
-    }
-    .futon {
-        margin-left: 32px;
-    }
+        margin-bottom: 30px;
+    }    
     .item.c {
-        margin-top: 53px;
+            margin-top: 53px;
         .ubicacion>h3 {
             text-transform: uppercase;
             font-weight: bolder;
             text-decoration: underline;
         }}
-
-
+    .item.d {
+        margin-top: 150px;
+    }
     #contacto { 
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 500px 450px;
@@ -282,7 +256,13 @@ p {
     
 }
 @media (max-width: 776px){
+    body {
+        max-width: 776px;
+        margin: auto;
+    }
+   
     #modelos {
+        margin-left: 0;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 500px 120px;
         grid-auto-rows: 200px;
@@ -292,63 +272,8 @@ p {
             "modeloRojo modeloRojo"; }
         .item.k {
             margin-top: 50px;
-            margin-left: -42px;}    
-    #modelos {
-            margin-top: 120px;
-            margin-bottom: 500px;
-            margin-left: 120px;        
-        }
-    .carousel-inner {
-        height: 550px;
-    }
-    #modelos {
-        margin-top: 120px;
-        }
+            margin-left: 40px;}    
     
-    // .container {
-    //     margin-left: 0;
-    // }
-    .logoRs {
-        margin-left: 35px;
-    }
-    .item.i {
-        margin-left: -35px;
-    }
-    .item.j {
-        margin-left: -34;
-    }
-    .item.f {
-        margin-left: 100px;
-    }
-    .item.f>h2 {
-        margin-left: -2px;
-    }
-    #descripcion {
-        margin-left: -6px;
-    }
-    .carru {
-        margin-left: 52px;
-    }
-    #detalles {
-        margin-left: 38px;
-    }
-    .deTitulo {
-        margin-left: -4px;
-    }
-    .futon {
-        margin-left: 8px;
-    }
-    .item.e {
-        margin-left: -31px;
-    }
-    .item.c {
-        margin-top: 30px;
-        .ubicacion>h3 {
-            text-transform: uppercase;
-            font-weight: bolder;
-            text-decoration: underline;
-        }
-    }
     #contacto { 
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 500px 450px;
@@ -362,6 +287,16 @@ p {
 }
 
 @media (max-width: 576px) {
+    body {
+        max-width: 576px;
+        margin: auto;
+    }
+    #logo {
+        margin-top: 145px;
+    }
+    .logoRsp {
+        margin-left: 30px;
+    }
     #modelos {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 500px 120px;
@@ -372,65 +307,22 @@ p {
             "modeloRojo modeloRojo"; }
         .item.k {
             margin-top: 50px;
-            margin-left: -42px;}    
-    #modelos {
-            margin-top: 120px;
-            margin-bottom: 500px;
-            margin-left: 120px;        
-        }
-
-    .carousel-inner {
-        height: 370px;
-    }
-    
-     .container {
-       margin-left: 0;
-    }
-    .logoRs {
-        margin-left: 0px;
-        margin-top: 150px;
-    }
-    .logoRsp {
-        margin-left: 75px;
-    }
-    .item.i {
-        margin-left: 0px;
-    }
+            margin-left: 62px;
+        }    
     .item.j {
-        margin-left: -51px;
+        margin-left: 50px;
     }
-    .item.f {
-        margin-left: 100px;
-    }
-    .item.f > h2 {
+    .zapa {
         margin-left: 0;
     }
-    #descripcion {
-     margin-left: 0px;
-   }
     .carru {
-        margin-left: 52px;
-        margin-top: 20px;
+        margin-left: 21px;
+    }
+    .item.f {
+        margin-left: 15px;
     }
     #detalles {
-        margin-left: 63px;
-        margin-top: 80px;
-    }
-    .futon {
-        margin-left: 40px;
-    }
-    .item.c {
-        margin-top: 30px;
-        margin-left: -15px;
-        .ubicacion>h3 {
-            text-transform: uppercase;
-            font-weight: bolder;
-            text-decoration: underline;
-            margin-left: 62px;
-        }
-    }
-    .deTitulo {
-        margin-left: -32px;
+        margin-left: 14px;
     }
     #contacto { 
         grid-template-columns: 1fr 1fr;
@@ -444,7 +336,12 @@ p {
             "footer footer";
 }
 @media (max-width: 375px) {
+    body {
+        max-width: 375px;
+        margin: auto;
+    }
     #modelos {
+        margin-left: 35px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 500px 120px;
         grid-auto-rows: 200px;
@@ -454,65 +351,64 @@ p {
             "modeloRojo modeloRojo"; }
         .item.k {
             margin-top: 50px;
-            margin-left: -48px;}    
-    #modelos {
-            margin-top: 120px;
-            margin-bottom: 500px;
-            margin-left: 120px;        
-        }
+            }    
 
-    .carousel-inner {
-        height: 300px;
+
+     .logoRs {
+         margin-left: -6px;
+         margin-top: 150px;
     }
-    
-     .container {
-       margin-left: 0;
-    }
-    .logoRs {
-        margin-left: -6px;
-        margin-top: 150px;
-    }
-    .logoRsp {
-        margin-left: 65px;
+     .logoRsp {
+         margin-left: 75px;
     }
     .item.i {
-        margin-left: 0;
-    }
-    .item.j {
-        margin-left: -72px;
-    }
-    .item.f {
         margin-left: 100px;
     }
-    .item.f > h2 {
-        margin-left: 0;
+    .zapa {
+        margin-left: -40px;
     }
     #descripcion {
-     margin-left: -16px;
-   }
+          margin-left: 70px;
+        }
     .carru {
-        margin-left: 52px;
-        margin-top: 20px;
+        margin-left: 10px;
     }
     #detalles {
-        margin-left: 32px;
-        margin-top: 80px;
-    }
+         margin-left: 60px;
+         margin-top: 80px;
+     }
     .futon {
         margin-left: 40px;
+    }
+    .item.b {
+        padding: 0;
     }
     .item.c {
         margin-top: 30px;
         margin-left: -27px;
         .ubicacion>h3 {
+            margin-left: 25px;
             text-transform: uppercase;
             font-weight: bolder;
             text-decoration: underline;
         }
     }
-    .deTitulo {
-        margin-left: -32px;
-    }
+//     .item.j {
+//         margin-left: -72px;
+//     }
+//     .item.f {
+//         margin-left: 100px;
+//     }
+//     .item.f > h2 {
+//         margin-left: 0;
+//     }
+//     .carru {
+//         margin-left: 52px;
+//         margin-top: 20px;
+//     }
+//     .deTitulo {
+//         margin-left: -32px;
+//     }
     #contacto { 
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 500px 450px;
