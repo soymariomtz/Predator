@@ -119,7 +119,11 @@ iframe {
   border-radius: 18px 18px;
   cursor: display; }
 
-.widow {
+.iframeYt {
+  border-radius: 18px 18px;
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.5); }
+
+.slideIcon {
   width: 5%;
   opacity: 1; }
 
@@ -182,9 +186,9 @@ iframe {
   #modelos {
     margin-top: 120px;
     margin-bottom: 500px; }
-  .zapa {
+  .modeloRsp {
     margin-left: 105px; }
-  .carru {
+  .carouselRsp {
     margin-bottom: 30px; }
   .item.c {
     margin-top: 53px; }
@@ -241,9 +245,9 @@ iframe {
     margin-left: 68px; }
   .item.j {
     margin-left: 50px; }
-  .zapa {
+  .modeloRsp {
     margin-left: 0; }
-  .carru {
+  .carouselRsp {
     margin-left: 21px; }
   .item.f {
     margin-left: 15px; }
@@ -274,20 +278,20 @@ iframe {
     margin-left: 50px; }
   .item.i {
     margin-left: 83px; }
-  .zapa {
+  .modeloRsp {
     margin-left: -40px; }
   #descripcion {
     margin-left: 35px; }
   .item.f > h2 {
     margin-left: 10px; }
-  .carru {
+  .carouselRsp {
     margin-left: 10px; }
   #detalles {
     margin-left: 51px;
     margin-top: 80px; }
   .iteam.a {
     margin-left: 72px; }
-  .futon {
+  .contactoRsp {
     margin-left: 40px; }
   .item.b {
     padding: 0; }
@@ -325,16 +329,16 @@ iframe {
     margin-left: 88px; }
   .item.i {
     margin-left: 141px; }
-  .zapa {
+  .modeloRsp {
     margin-left: -40px; }
   #descripcion {
     margin-left: 70px; }
-  .carru {
+  .carouselRsp {
     margin-left: 10px; }
   #detalles {
     margin-left: 60px;
     margin-top: 80px; }
-  .futon {
+  .contactoRsp {
     margin-left: 40px; }
   .item.b {
     padding: 0; }

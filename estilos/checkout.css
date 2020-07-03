@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box; }
+  
+html {
+    scroll-behavior: smooth; }
+
+body {
+    font-family: Montserrat;
+    line-height: 1.4;
+    background-color: #f8f9fa;
+    max-width: 1300px;
+    margin: auto;
+}
+.nave a {
+    color: black;
+}
+ 
+.nave {
+    font-size: 18px;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+}
+.infoPago {
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.infoTarjeta + label {
+    margin-right: 50px;
+}
+.labelPago {
+    padding: 9px;
+}  
+.boxPago:checked + label{
+    color: black;
+    border: 2px solid #80bdff;
+    border-radius: 11px 11px;
+}
+  
+.boxPago{
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}

@@ -130,7 +130,7 @@ p {
     
     .item.h {
     grid-area: mapa;}
-    }
+}
 
     /* DETALLE */
 #detalles {
@@ -140,7 +140,11 @@ iframe {
     border-radius: 18px 18px;
     cursor: display;
 }
-.widow {
+.iframeYt {
+    border-radius: 18px 18px;
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.5);
+}
+.slideIcon {
     width: 5%;
     opacity: 1;
 }
@@ -226,10 +230,10 @@ iframe {
             margin-bottom: 500px;
                     
         }
-    .zapa {
+    .modeloRsp {
         margin-left: 105px;
     }
-    .carru {
+    .carouselRsp {
         margin-bottom: 30px;
     }    
     .item.c {
@@ -238,7 +242,8 @@ iframe {
             text-transform: uppercase;
             font-weight: bolder;
             text-decoration: underline;
-        }}
+        }
+    }
     .item.d {
         margin-top: 150px;
     }
@@ -251,7 +256,8 @@ iframe {
             "formulario formulario"
             "mapa mapa"
             "newsletter newsletter"
-            "footer footer";}
+            "footer footer";
+    }
     
 }
 @media (max-width: 776px){
@@ -268,7 +274,8 @@ iframe {
         grid-template-areas:
             "titulo titulo"
             "modeloNegro modeloNegro"
-            "modeloRojo modeloRojo"; }
+            "modeloRojo modeloRojo"; 
+        }
         .item.k {
             margin-top: 50px;
             margin-left: 40px;}
@@ -284,7 +291,8 @@ iframe {
             "formulario formulario"
             "mapa mapa"
             "newsletter newsletter"
-            "footer footer";}
+            "footer footer";
+    }
 }
 
 @media (max-width: 576px) {
@@ -316,10 +324,10 @@ iframe {
     .item.j {
         margin-left: 50px;
     }
-    .zapa {
+    .modeloRsp {
         margin-left: 0;
     }
-    .carru {
+    .carouselRsp {
         margin-left: 21px;
     }
     .item.f {
@@ -356,7 +364,7 @@ iframe {
             "modeloRojo modeloRojo"; }
         .item.k {
             margin-top: 50px;
-            }    
+        }    
     .logoRs {
          margin-left: -15px;
          margin-top: 150px;
@@ -367,7 +375,7 @@ iframe {
     .item.i {
         margin-left: 83px;
     }
-    .zapa {
+    .modeloRsp {
         margin-left: -40px;
     }
     #descripcion {
@@ -376,17 +384,17 @@ iframe {
         .item.f>h2 {
             margin-left: 10px;
         }
-    .carru {
+    .carouselRsp {
         margin-left: 10px;
     }
     #detalles {
          margin-left: 51px;
          margin-top: 80px;
-     }
+    }
     .iteam.a {
         margin-left: 72px;
     }
-    .futon {
+    .contactoRsp {
         margin-left: 40px;
     }
     .item.b {
@@ -404,7 +412,6 @@ iframe {
             text-decoration: underline;
         }
     }
-   
     #contacto { 
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 500px 450px;
@@ -415,7 +422,7 @@ iframe {
             "mapa mapa"
             "newsletter newsletter"
             "footer footer";
-        }
+    }
     
 }   
 @media (max-width: 375px) {
@@ -434,7 +441,7 @@ iframe {
             "modeloRojo modeloRojo"; }
         .item.k {
             margin-top: 50px;
-            }    
+        }    
     .logoRs {
          margin-left: -6px;
          margin-top: 150px;
@@ -445,21 +452,21 @@ iframe {
     .item.i {
         margin-left: 141px;
     }
-    .zapa {
+    .modeloRsp {
         margin-left: -40px;
     }
    
     #descripcion {
           margin-left: 70px;
         }
-    .carru {
+    .carouselRsp {
         margin-left: 10px;
     }
     #detalles {
          margin-left: 60px;
          margin-top: 80px;
-     }
-    .futon {
+    }
+    .contactoRsp {
         margin-left: 40px;
     }
     .item.b {
@@ -490,6 +497,6 @@ iframe {
             "mapa mapa"
             "newsletter newsletter"
             "footer footer";
-        }
+    }
       
 }
