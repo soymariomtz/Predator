@@ -93,7 +93,7 @@
       <!-- INFORMACIÓN PERSONAL -->
       <div class="col-md-8 order-md-1">
         <h4 class="mb-3">Dirección de envio</h4>
-        <form action="#" method="post" class="needs-validation">
+        <form action="#" method="post" class="needs-validation" id="formulario">
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="nombre">Nombre</label>
@@ -169,13 +169,14 @@
           <hr class="mb-4">
           <h4 class="mb-3">Pago</h4>
           <!-- PAGO -->
-          <div class="infoPago">
+          <span class="text-muted">Elija su método de pago.</span>
+          <div class="infoPago mt-3 col col-md-10">
             <form class="infoTarjeta">
-                <input class="boxPago" type="radio" name="pago" value="debito" id="debit">
-                <label class="labelPago" for="debit"><img src="images/debito.png" width="130px" alt=""></label>
-                <input class="boxPago" type="radio" name="pago" value="credito" id="credit">
+                <input class="boxPago" type="radio" name="pago" value="debito" id="debit" required>
+                <label class="labelPago" for="debit" checked><img src="images/debito.png" width="130px" alt=""></label>
+                <input class="boxPago" type="radio" name="pago" value="credito" id="credit" required>
                 <label class="labelPago" for="credit"><img src="images/credito.png" width="130px" alt=""></label>
-                <input class="boxPago" type="radio" name="pago" value="paypal" id="paypal">
+                <input class="boxPago" type="radio" name="pago" value="paypal" id="paypal" required>
                 <label class="labelPago" for="paypal"><img src="images/paypal.png" width="130px" alt=""></label>   
             </form>
           </div>
@@ -213,7 +214,7 @@
             </div>
           </div>
           <hr class="mb-4">
-          <button class="btn btn-outline-success btn-lg btn-block" type="submit" value="enviar-pago">Continuar</button>
+          <button form="formulario" class="btn btn-outline-success btn-lg btn-block" type="submit">Continuar</button>
         </form>
       </div>
     </div>
