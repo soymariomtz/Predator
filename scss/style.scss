@@ -330,8 +330,14 @@ iframe {
     .carouselRsp {
         margin-left: 21px;
     }
-    .item.f {
+    .mTop {
+        margin-top: 95px;
+    }
+    #descripcion {
+        .item.f {
         margin-left: 15px;
+        margin-top: 200px;
+        }
     }
     #detalles {
         margin-left: 14px;
@@ -371,6 +377,7 @@ iframe {
     }
     .logoRsp {
          margin-left: 50px;
+         margin-top:    95px;
     }
     .item.i {
         margin-left: 83px;
@@ -448,6 +455,9 @@ iframe {
     }
     .logoRsp {
          margin-left: 88px;
+    }
+    .nave {
+        font-size: 16px;
     }
     .item.i {
         margin-left: 141px;
