@@ -82,7 +82,8 @@ h2 {
 
 .imgActive:active {
   transform: scale(1.3);
-  transition: all 1.3s; }
+  transition: all 2s;
+  cursor: zoom-in; }
 
 /* DESCRIPCION */
 p {
@@ -181,6 +182,10 @@ iframe {
       margin-top: 21px; }
     #contacto .item.d {
       margin-top: 166px; }
+  .imgActive:hover {
+    transform: scale(1.3);
+    transition: all 2s;
+    cursor: zoom-in; }
   #modelos {
     margin-left: -66px; }
   .item.j {
