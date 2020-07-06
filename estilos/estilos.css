@@ -15,7 +15,7 @@ body {
   font-family: Montserrat;
   line-height: 1.4;
   background-color: #f3f3f3;
-  max-width: 1300px;
+  width: 1300px;
   margin: auto; }
 
 /* MENU */
@@ -77,6 +77,13 @@ h2 {
 .buyton:hover {
   color: white; }
 
+.imgActive:hover {
+  cursor: zoom-in; }
+
+.imgActive:active {
+  transform: scale(1.3);
+  transition: all 1.3s; }
+
 /* DESCRIPCION */
 p {
   font-family: Raleway; }
@@ -131,7 +138,7 @@ iframe {
 .grid {
   display: grid;
   grid-gap: 10px;
-  margin-top: 150px; }
+  margin-top: 100px; }
 
 #contacto {
   grid-template-columns: 1fr 1fr;
@@ -157,210 +164,74 @@ iframe {
     text-align: center;
     margin-top: 100px; }
 
-/* MEDIA */
-@media (max-width: 1000px) {
+@media (min-width: 1024px) and (max-width: 1200px) {
   #modelos {
-    margin-left: -62px; } }
+    margin-left: auto; } }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   body {
-    max-width: 1200px;
+    width: 840px;
     margin: auto; }
-  .logoRs {
-    margin: auto; }
-  #modelos {
-    margin-left: -26px; } }
-
-@media (max-width: 976px) {
-  body {
-    max-width: 976px;
-    margin: auto; }
-  #modelos {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 500px 120px;
-    grid-auto-rows: 200px;
-    grid-template-areas: "titulo titulo" "modeloNegro modeloNegro" "modeloRojo modeloRojo"; }
-  .item.k {
-    margin-top: 50px;
-    margin-left: 13px; }
-  #modelos {
-    margin-top: 120px;
-    margin-bottom: 500px; }
-  .modeloRsp {
-    margin-left: 105px; }
-  .carouselRsp {
-    margin-bottom: 30px; }
-  .item.c {
-    margin-top: 53px; }
-    .item.c .ubicacion > h3 {
-      text-transform: uppercase;
-      font-weight: bolder;
-      text-decoration: underline; }
-  .item.d {
-    margin-top: 150px; }
   #contacto {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 500px 450px;
     grid-auto-rows: 200px;
-    grid-template-areas: "titulo titulo" "formulario formulario" "mapa mapa" "newsletter newsletter" "footer footer"; } }
-
-@media (max-width: 776px) {
-  body {
-    max-width: 776px;
-    margin: auto; }
+    grid-template-areas: "titulo titulo" "formulario formulario" "mapa mapa" "newsletter newsletter" "footer footer"; }
+    #contacto .item.c {
+      margin-top: 21px; }
+    #contacto .item.d {
+      margin-top: 166px; }
   #modelos {
-    margin-left: 0;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 500px 120px;
-    grid-auto-rows: 200px;
-    grid-template-areas: "titulo titulo" "modeloNegro modeloNegro" "modeloRojo modeloRojo"; }
-  .item.k {
-    margin-top: 50px;
-    margin-left: 40px; }
-  .item.i {
-    margin-left: 0px; }
-  #contacto {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 500px 450px;
-    grid-auto-rows: 200px;
-    grid-template-areas: "titulo titulo" "formulario formulario" "mapa mapa" "newsletter newsletter" "footer footer"; } }
-
-@media (max-width: 576px) {
-  body {
-    max-width: 576px;
-    margin: auto; }
-  #logo {
-    margin-top: 145px; }
-  .logoRsp {
-    margin-left: 30px; }
-  #modelos {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 500px 120px;
-    grid-auto-rows: 200px;
-    grid-template-areas: "titulo titulo" "modeloNegro modeloNegro" "modeloRojo modeloRojo"; }
-  .item.k {
-    margin-top: 50px;
-    margin-left: 62px; }
-  .item.i {
-    margin-left: 68px; }
+    margin-left: -66px; }
   .item.j {
-    margin-left: 50px; }
-  .modeloRsp {
-    margin-left: 0; }
+    margin-left: auto;
+    margin-right: auto; }
+  .item.k {
+    margin-left: auto;
+    margin-right: auto; }
+  .item.f {
+    margin-top: 265px;
+    margin-bottom: 50px; }
+  .ubicacion > h3 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 45px; }
   .carouselRsp {
-    margin-left: 21px; }
-  .mTop {
-    margin-top: 95px; }
-  #descripcion .item.f {
-    margin-left: 15px;
-    margin-top: 200px; }
-  #detalles {
-    margin-left: 14px; }
-  #contacto {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 500px 450px;
-    grid-auto-rows: 200px;
-    grid-template-areas: "titulo titulo" "formulario formulario" "mapa mapa" "newsletter newsletter" "footer footer"; } }
+    margin-bottom: 40px; }
+  .iframeYt {
+    margin-bottom: 30px; } }
 
 @media (max-width: 450px) {
-  body {
-    max-width: 450px;
-    margin: auto; }
   #modelos {
-    margin-left: 11px;
+    margin-left: -21px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 500px 120px;
     grid-auto-rows: 200px;
     grid-template-areas: "titulo titulo" "modeloNegro modeloNegro" "modeloRojo modeloRojo"; }
-  .item.k {
-    margin-top: 50px; }
-  .logoRs {
-    margin-left: -15px;
-    margin-top: 150px; }
-  .logoRsp {
-    margin-left: 50px;
-    margin-top: 95px; }
-  .item.i {
-    margin-left: 83px; }
-  .modeloRsp {
-    margin-left: -40px; }
+    #modelos .item.k {
+      margin-left: auto; }
+    #modelos .item.j {
+      margin-left: auto; }
+    #modelos .mTop {
+      margin-top: 150px; }
   #descripcion {
-    margin-left: 35px; }
-  .item.f > h2 {
-    margin-left: 10px; }
+    margin-top: 800px; }
   .carouselRsp {
-    margin-left: 10px; }
-  #detalles {
-    margin-left: 51px;
-    margin-top: 80px; }
-  .iteam.a {
-    margin-left: 72px; }
-  .contactoRsp {
+    margin-left: 35px; }
+  .iframeYt {
     margin-left: 40px; }
-  .item.b {
-    padding: 0; }
-  .item.c {
-    margin-top: 30px; }
-    .item.c .ubicacion {
-      margin-left: -32px; }
-    .item.c .ubicacion > h3 {
-      margin-left: 30px;
-      text-transform: uppercase;
-      font-weight: bolder;
-      text-decoration: underline; }
-  #contacto {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 500px 450px;
-    grid-auto-rows: 200px;
-    grid-template-areas: "titulo titulo" "formulario formulario" "mapa mapa" "newsletter newsletter" "footer footer"; } }
+  #contacto .item.b {
+    padding: 70px; }
+  #contacto .item.c {
+    margin-top: 45px; }
+  #contacto .item.d {
+    margin-top: 260px; }
+  #contacto iframe {
+    width: 640px;
+    height: 540px; } }
 
 @media (max-width: 375px) {
-  body {
-    max-width: 375px;
-    margin: auto; }
-  #modelos {
-    margin-left: 35px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 500px 120px;
-    grid-auto-rows: 200px;
-    grid-template-areas: "titulo titulo" "modeloNegro modeloNegro" "modeloRojo modeloRojo"; }
-  .item.k {
-    margin-top: 50px; }
-  .logoRs {
-    margin-left: -6px;
-    margin-top: 150px; }
-  .logoRsp {
-    margin-left: 88px; }
-  .nave {
-    font-size: 16px; }
-  .item.i {
-    margin-left: 141px; }
-  .modeloRsp {
-    margin-left: -40px; }
-  #descripcion {
-    margin-left: 70px; }
-  .carouselRsp {
-    margin-left: 10px; }
-  #detalles {
-    margin-left: 60px;
-    margin-top: 80px; }
-  .contactoRsp {
-    margin-left: 40px; }
-  .item.b {
-    padding: 0; }
-  .item.c {
-    margin-top: 66px; }
-    .item.c .ubicacion > h3 {
-      margin-left: 25px;
-      text-transform: uppercase;
-      font-weight: bolder;
-      text-decoration: underline; }
-  .item.d {
-    margin-left: 60px; }
-  .item.e {
-    margin-left: 60px; }
-  #contacto {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 500px 450px;
-    grid-auto-rows: 200px;
-    grid-template-areas: "titulo titulo" "formulario formulario" "mapa mapa" "newsletter newsletter" "footer footer"; } }
+  #contacto .item.c {
+    opacity: 1 !important; } }

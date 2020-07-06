@@ -2,7 +2,8 @@
     box-sizing: border-box; }
   
 html {
-    scroll-behavior: smooth; }
+    scroll-behavior: smooth; 
+}
 
 body {
     font-family: Montserrat;
@@ -18,10 +19,8 @@ body {
 .nave {
     font-size: 18px;
 }
-
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
+.nav-link {
+    padding: 15px;
 }
 .infoPago {
     margin-bottom: 40px;
@@ -52,11 +51,6 @@ body {
     margin-top: 3rem;
 }
 
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
-}
 @media (max-width: 475px) {
     body {
         width: 571px;

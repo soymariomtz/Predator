@@ -1,5 +1,5 @@
 :root {
-	--breakpoint-xs: 0;
+    --breakpoint-xs: 0;
 	--breakpoint-sm: 576px;
 	--breakpoint-md: 768px;
 	--breakpoint-lg: 992px;
@@ -10,14 +10,15 @@
     box-sizing: border-box;
 }
 
-html {scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
 	font-family: Montserrat;
     line-height: 1.4;
     background-color:  #f3f3f3;
-    max-width: 1300px;
+    width: 1300px;
     margin: auto;
 }
 
@@ -36,6 +37,7 @@ body {
     margin-bottom: 50px;
 }
 
+
 h2 {
     display: flex;
 	justify-content: center;
@@ -53,8 +55,8 @@ h2 {
 /* MODELOS */
 .grids {
 	display: grid;
-	grid-gap: 10px;
-    margin-top: 150px;
+ 	grid-gap: 10px;
+     margin-top: 150px;
 }
 
 #modelos { 
@@ -89,7 +91,13 @@ h2 {
 .buyton:hover {
     color: white;
 }
-
+.imgActive:hover {
+    cursor: zoom-in;
+}
+.imgActive:active {
+    transform: scale(1.3);
+    transition: all 1.3s;
+}
 /* DESCRIPCION */
 p {
 	font-family: Raleway;
@@ -132,7 +140,7 @@ p {
     grid-area: mapa;}
 }
 
-    /* DETALLE */
+/* DETALLE */
 #detalles {
  	margin-top: 3rem;
 }
@@ -153,7 +161,7 @@ iframe {
 .grid {
 	display: grid;
 	grid-gap: 10px;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 #contacto { 
@@ -189,64 +197,17 @@ iframe {
     text-align: center;
     margin-top: 100px; } 
 }
+@media (min-width: 1024px) and (max-width: 1200px) {
+    #modelos {
+        margin-left: auto;
+    }
+}
 
-/* MEDIA */
-@media (max-width: 1000px) {
-    #modelos {
-        margin-left: -62px;
-    }
-}
-@media (max-width: 1200px){
+@media (max-width: 768px) {
     body {
-        max-width: 1200px;
+        width: 840px;
         margin: auto;
-    }
-    .logoRs {
-        margin: auto;
-    }
-    
-    #modelos {
-        margin-left: -26px;
-    }
-}
-@media (max-width: 976px) { 
-    body {
-        max-width: 976px;
-        margin: auto;
-    }
-    #modelos {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 500px 120px;
-        grid-auto-rows: 200px;
-        grid-template-areas:
-            "titulo titulo"
-            "modeloNegro modeloNegro"
-            "modeloRojo modeloRojo"; }
-        .item.k {
-            margin-top: 50px;
-            margin-left: 13px;}    
-    #modelos {
-            margin-top: 120px;
-            margin-bottom: 500px;
-                    
-        }
-    .modeloRsp {
-        margin-left: 105px;
-    }
-    .carouselRsp {
-        margin-bottom: 30px;
-    }    
-    .item.c {
-            margin-top: 53px;
-        .ubicacion>h3 {
-            text-transform: uppercase;
-            font-weight: bolder;
-            text-decoration: underline;
-        }
-    }
-    .item.d {
-        margin-top: 150px;
-    }
+    } 
     #contacto { 
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 500px 450px;
@@ -256,257 +217,99 @@ iframe {
             "formulario formulario"
             "mapa mapa"
             "newsletter newsletter"
-            "footer footer";
-    }
-    
-}
-@media (max-width: 776px){
-    body {
-        max-width: 776px;
-        margin: auto;
-    }
-   
-    #modelos {
-        margin-left: 0;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 500px 120px;
-        grid-auto-rows: 200px;
-        grid-template-areas:
-            "titulo titulo"
-            "modeloNegro modeloNegro"
-            "modeloRojo modeloRojo"; 
+            "footer footer";  
+             .item.c {
+                 margin-top: 21px;
+            }
+            .item.d {
+                margin-top: 166px;        
+            }
+            
         }
-        .item.k {
-            margin-top: 50px;
-            margin-left: 40px;}
-    .item.i {
-        margin-left: 0px;
-    }
-    #contacto { 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 500px 450px;
-        grid-auto-rows: 200px;
-        grid-template-areas: 
-            "titulo titulo"
-            "formulario formulario"
-            "mapa mapa"
-            "newsletter newsletter"
-            "footer footer";
-    }
-}
-
-@media (max-width: 576px) {
-    body {
-        max-width: 576px;
-        margin: auto;
-    }
-    #logo {
-        margin-top: 145px;
-    }
-    .logoRsp {
-        margin-left: 30px;
-    }
+        
     #modelos {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 500px 120px;
-        grid-auto-rows: 200px;
-        grid-template-areas:
-            "titulo titulo"
-            "modeloNegro modeloNegro"
-            "modeloRojo modeloRojo"; }
-        .item.k {
-            margin-top: 50px;
-            margin-left: 62px;
-        } 
-    .item.i {
-        margin-left: 68px;
+        margin-left: -66px;
     }
     .item.j {
-        margin-left: 50px;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .modeloRsp {
-        margin-left: 0;
+    .item.k {   
+        margin-left: auto;
+        margin-right: auto;
     }
-    .carouselRsp {
-        margin-left: 21px;
+    .item.f {
+        margin-top: 265px;
+        margin-bottom: 50px;
     }
-    .mTop {
-        margin-top: 95px;
-    }
-    #descripcion {
-        .item.f {
-        margin-left: 15px;
-        margin-top: 200px;
+    .ubicacion>h3 {
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 45px;
         }
+    
+    .carouselRsp {
+        margin-bottom: 40px;
     }
-    #detalles {
-        margin-left: 14px;
-    }
-    #contacto { 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 500px 450px;
-        grid-auto-rows: 200px;
-        grid-template-areas: 
-            "titulo titulo"
-            "formulario formulario"
-            "mapa mapa"
-            "newsletter newsletter"
-            "footer footer";
+    .iframeYt {
+        margin-bottom: 30px;
     }
 }
 @media (max-width: 450px) {
-    body {
-        max-width: 450px;
-        margin: auto;
-    }
-    #modelos {
-        margin-left: 11px;
+    #modelos { 
+        margin-left: -21px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 500px 120px;
         grid-auto-rows: 200px;
-        grid-template-areas:
-            "titulo titulo"
-            "modeloNegro modeloNegro"
-            "modeloRojo modeloRojo"; }
-        .item.k {
-            margin-top: 50px;
-        }    
-    .logoRs {
-         margin-left: -15px;
-         margin-top: 150px;
-    }
-    .logoRsp {
-         margin-left: 50px;
-         margin-top:    95px;
-    }
-    .item.i {
-        margin-left: 83px;
-    }
-    .modeloRsp {
-        margin-left: -40px;
-    }
-    #descripcion {
-          margin-left: 35px;
-        }
-        .item.f>h2 {
-            margin-left: 10px;
-        }
-    .carouselRsp {
-        margin-left: 10px;
-    }
-    #detalles {
-         margin-left: 51px;
-         margin-top: 80px;
-    }
-    .iteam.a {
-        margin-left: 72px;
-    }
-    .contactoRsp {
-        margin-left: 40px;
-    }
-    .item.b {
-        padding: 0;
-    }
-    .item.c {
-        margin-top: 30px;
-        .ubicacion{
-            margin-left: -32px;
-        }
-        .ubicacion>h3 {
-            margin-left: 30px;
-            text-transform: uppercase;
-            font-weight: bolder;
-            text-decoration: underline;
-        }
-    }
-    #contacto { 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 500px 450px;
-        grid-auto-rows: 200px;
         grid-template-areas: 
             "titulo titulo"
-            "formulario formulario"
-            "mapa mapa"
-            "newsletter newsletter"
-            "footer footer";
+            "modeloNegro modeloNegro"
+            "modeloRojo modeloRojo";
+        .item.k {
+            margin-left: auto;
+        }
+        .item.j {
+            margin-left: auto;
+        }
+        .mTop {
+            margin-top: 150px;
+        }
+        
+    }   
+    #descripcion {
+        margin-top: 800px;
     }
     
-}   
-@media (max-width: 375px) {
-    body {
-        max-width: 375px;
-        margin: auto;
-    }
-    #modelos {
-        margin-left: 35px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 500px 120px;
-        grid-auto-rows: 200px;
-        grid-template-areas:
-            "titulo titulo"
-            "modeloNegro modeloNegro"
-            "modeloRojo modeloRojo"; }
-        .item.k {
-            margin-top: 50px;
-        }    
-    .logoRs {
-         margin-left: -6px;
-         margin-top: 150px;
-    }
-    .logoRsp {
-         margin-left: 88px;
-    }
-    .nave {
-        font-size: 16px;
-    }
-    .item.i {
-        margin-left: 141px;
-    }
-    .modeloRsp {
-        margin-left: -40px;
-    }
-   
-    #descripcion {
-          margin-left: 70px;
-        }
     .carouselRsp {
-        margin-left: 10px;
+        margin-left: 35px;
     }
-    #detalles {
-         margin-left: 60px;
-         margin-top: 80px;
-    }
-    .contactoRsp {
+    .iframeYt {
         margin-left: 40px;
     }
-    .item.b {
-        padding: 0;
-    }
-    .item.c {
-        margin-top: 66px;
-        .ubicacion>h3 {
-            margin-left: 25px;
-            text-transform: uppercase;
-            font-weight: bolder;
-            text-decoration: underline;
+    #contacto {        
+        .item.b {
+            padding: 70px;
+        }
+        .item.c {
+            margin-top: 45px;
+        }
+        .item.d {
+            margin-top: 260px;
+        }
+        iframe {
+            width: 640px;
+            height: 540px;
+        }
+    } 
+    
+}
+
+@media (max-width: 375px) {
+    #contacto {
+        .item.c {
+            opacity: 1!important;
         }
     }
-    .item.d {
-        margin-left: 60px;
-    }
-    .item.e {
-        margin-left: 60px;
-    }
-    #contacto { 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 500px 450px;
-        grid-auto-rows: 200px;
-        grid-template-areas: 
-            "titulo titulo"
-            "formulario formulario"
-            "mapa mapa"
-            "newsletter newsletter"
-            "footer footer";
-    }
-      
-}
+} 
