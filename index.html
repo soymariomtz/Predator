@@ -41,7 +41,7 @@
 			</nav>
 			<div class="container logoRs">
 				<h1 class="text-center" id="logo">
-					<img class="imgRsp" src="images/logo.png" alt="Logo Predator">
+					<img class="imgRsp logoJs scaleUp" src="images/logo.png" alt="Logo Predator">
 				</h1>
 			</div>
 			<div class="container mt-5 text-center logoRs">
@@ -53,7 +53,7 @@
 <section class="container mtModelos" id="modelos">
 	<h2>MODELOS</h2>
 	<div class="row justify-space-around">
-		<div class="col-lg-6 punchline text-center">
+		<div class="col-lg-6 rotate text-center">
 			<img class="imgRsp imgActive" src="images/modelnegro.png" alt="Modelo negro de zapatilla" width="400">
 			<button type="button" class="wobble-hor-bottom m-auto d-block btn boton">
 				<a class="text-decoration-none" href="checkout.html">Comprar</a>
@@ -72,8 +72,8 @@
 		<h2>DESCRIPCIÓN</h2>
 		<div class="row">
 			<div class="col-lg-6 col-md-6 descTexto">
-				<h3 class="punchline">PREDATOR 20.1</h3>
-				<h4 class="punchline">ZAPATILLAS PARA USO DIARIO QUE SE INSPIRAN EN LOS ADIDAS PREDATOR</h4>
+				<h3 class="rotate">PREDATOR 20.1</h3>
+				<h4 class="rotate">ZAPATILLAS PARA USO DIARIO QUE SE INSPIRAN EN LOS ADIDAS PREDATOR</h4>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 punchline"> 
 				<div class="carouselRsp">
@@ -118,7 +118,7 @@
 					</div>
 			</div>						
 			</div>
-			<div class="descOrder2 col-lg-6 col-md-6 col-sm-6 punchline">
+			<div class="descOrder2 col-lg-6 col-md-6 col-sm-6 rotate">
 				<div id="scalas" class="carousel slide" data-ride="carousel" data-interval="false">
 					<div class="carousel-inner saibot">
 						<div class="carousel-item active">
@@ -169,9 +169,9 @@
 		<h2 class="mb-5">DETALLES</h2>
 		<div class="row">
 			<div class="col-lg-6 m-auto deTexto">
-				<h3 class="punchline">COMODIDAD Y AMORTIGUACION</h3>
-				<p class="punchline">La tecnología Boost en la mediasuela aporta mayor amortiguación y comodidad a tu pisada.</p>
-				<ul class="punchline">	
+				<h3 class="rotate">COMODIDAD Y AMORTIGUACION</h3>
+				<p class="rotate">La tecnología Boost en la mediasuela aporta mayor amortiguación y comodidad a tu pisada.</p>
+				<ul class="rotate">	
 					<li>Horma clásica</li>
 					<li>Sistema de atado de cordones</li>
 					<li>Zapatillas para tu estilo de vida futbolero</li>
@@ -191,7 +191,7 @@
 		<h2>CONTACTO</h2>
 		<div class="row">
 			<div class="col-lg-6">
-				<div class="punchline">
+				<div class="rotate">
 					<form action="#" method="Post">
 						<div class="form-group">
 							<label for="nombre">Nombre y Apellido:</label>
@@ -260,8 +260,21 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>	
 	<script src="https://unpkg.com/scrollreveal"></script>
 	<script>
-		ScrollReveal().reveal('.tagline', { delay: 400 })
-		ScrollReveal().reveal('.punchline', { delay: 700 })
+		ScrollReveal().reveal('.tagline', { delay: 400 });
+		ScrollReveal().reveal('.punchline', { delay: 700 });
+		ScrollReveal().reveal('.punchline', {
+			rotate: {
+				x: 20,
+				z: 20
+			}
+		});
+		ScrollReveal().reveal('.rotate', {
+			rotate: {
+				x: -50,
+				z: -50
+			}
+		});
+		ScrollReveal().reveal('.scaleUp', { scale: 2 });
 	</script>
 	<script src="js/three.r95.min.js"></script>
 	<script src="js/vanta.waves.min.js"></script>
