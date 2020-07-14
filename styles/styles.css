@@ -15,8 +15,7 @@ body {
   font-family: Montserrat;
   line-height: 1.4;
   color: #ffffff;
-  margin: 0;
-  background-color: #000; }
+  margin: 0; }
 
 /* MENU */
 .nave {
@@ -42,6 +41,10 @@ h2 {
 
 h3 {
   color: #ff0000;
+  font-weight: bold; }
+
+.newh3 {
+  color: #0000ff;
   font-weight: bold; }
 
 #logo {
@@ -115,12 +118,26 @@ iframe {
   border-radius: 18px 18px; }
 
 video {
-  border-radius: 21px 21px;
+  border-radius: 21px 21px; }
+
+video:hover {
   box-shadow: 0 0 25px #fafafab9; }
 
 .slideIcon {
   width: 5%;
   opacity: 1; }
+
+/* NOVEDADES */
+.novedades {
+  margin-top: 3rem; }
+
+.modelNew {
+  margin-top: 9rem; }
+
+.imgNovedades {
+  border: 1px solid #ffffff;
+  border-radius: 33px 33px;
+  box-shadow: 0 0 10px; }
 
 /* CONTACTO - NEWSLETTER - FOOTER */
 #contacto {
@@ -165,7 +182,9 @@ video {
     transform: scale(1.3);
     transition: all 2s; }
   .descTexto {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .imgNovedades {
+    width: 100%; } }
 
 @media (max-width: 576px) {
   .nav {
@@ -179,4 +198,6 @@ video {
   .descOrder1 {
     order: 1; }
   .descOrder2 {
-    order: 2; } }
+    order: 2; }
+  .imgNovedades {
+    margin-bottom: 3rem; } }

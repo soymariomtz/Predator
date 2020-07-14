@@ -43,11 +43,14 @@ h2 {
 	font-style: italic;
 	margin-bottom: 5rem;
     font-weight: bold;
-    ;
     color: #ffffff;
 }
 h3 {
     color: #ff0000;
+    font-weight: bold;
+}
+.newh3 {
+    color: #0000ff;
     font-weight: bold;
 }
 #logo {
@@ -128,11 +131,22 @@ iframe {
 }
 video {
     border-radius: 21px 21px;
+}
+video:hover {
     box-shadow: 0 0 25px #fafafab9;
 }
 .slideIcon {
     width: 5%;
     opacity: 1;
+}
+/* NOVEDADES */
+.modelNew{
+    margin-top: 9rem;
+}
+.imgNovedades {
+    border: 1px solid #ffffff;
+    border-radius: 33px 33px;
+    box-shadow: 0 0 10px;
 }
 
 /* CONTACTO - NEWSLETTER - FOOTER */
@@ -187,6 +201,9 @@ video {
     .descTexto {
         margin-top: 20px;
     }
+    .imgNovedades {
+        width: 100%;
+    }
 }
 @media (max-width: 576px) {
     .nav {
@@ -207,6 +224,9 @@ video {
     }
     .descOrder2 {
         order: 2;
+    }
+    .imgNovedades {
+        margin-bottom: 3rem;
     }
 
 }
