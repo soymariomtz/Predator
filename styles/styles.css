@@ -73,7 +73,7 @@ h3 {
   border-color: #ffffff;
   box-shadow: 0 0px 25px white; }
   .boton:hover a {
-    color: #000; }
+    color: #fa0000; }
 
 .imgActive:hover {
   cursor: zoom-in; }
@@ -127,6 +127,9 @@ video:hover {
 .slideIcon {
   width: 5%;
   opacity: 1; }
+
+.ulIcon {
+  list-style-image: url("../images/iconUl.png"); }
 
 /* NOVEDADES */
 .modelNew {
