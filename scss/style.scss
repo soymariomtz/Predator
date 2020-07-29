@@ -149,6 +149,10 @@ video:hover {
     border-radius: 33px 33px;
     box-shadow: 0 0 10px;
 }
+.imgNovedades:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+}
 
 /* CONTACTO - NEWSLETTER - FOOTER */
 #contacto {
